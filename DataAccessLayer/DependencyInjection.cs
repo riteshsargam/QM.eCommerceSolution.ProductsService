@@ -1,0 +1,16 @@
+﻿using Microsoft.Extensions.DependencyInjection;
+using System;
+using System.Collections.Generic;
+using System.Text;
+
+namespace eCommerce.ProductsService.DataAccessLayer;
+
+public static class DependencyInjection
+{
+    public static IServiceCollection AddDataAccessLayer(this IServiceCollection services)
+    {
+
+
+        return services;
+    }
+}
