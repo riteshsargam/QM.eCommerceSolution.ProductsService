@@ -1,4 +1,5 @@
-﻿using Microsoft.Extensions.DependencyInjection;
+﻿using eCommerce.BusinessLogicLayer.Mappers;
+using Microsoft.Extensions.DependencyInjection;
 using System;
 using System.Collections.Generic;
 using System.Text;
@@ -9,7 +10,7 @@ public static class DependencyInjection
 {
     public static IServiceCollection AddBusinessLogicLayer(this IServiceCollection services)
     {
-
+        services.AddAutoMapper(typeof(ProductAddRequestToProductMappingProfile).Assembly);
         return services;
     }
 }
